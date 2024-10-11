@@ -1,0 +1,5 @@
+Das Testen der folgenden Komponenten ist wichtig:
+
+Controller-Schicht: Stellt sicher, dass die Anwendung korrekt auf HTTP-Anfragen reagiert und mit der Service-Layer interagiert.
+Service-Schicht: Validiert die Geschäftslogik und stellt sicher, dass Operationen wie das Bestellen von Büchern und das Aktualisieren des Inventars korrekt durchgeführt werden.
+Repository-Schicht: Stellt sicher, dass der Datenzugriff funktioniert, da dies für die Aufrechterhaltung der Datenkonsistenz, insbesondere für das Buchinventar, entscheidend ist.

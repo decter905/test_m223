@@ -1,0 +1,4 @@
+Buchbestellung: Stellt die Integration zwischen der Service-Schicht und dem Repository sicher.
+                Dies ist entscheidend, um sicherzustellen, dass Bestellungen verarbeitet und das Inventar korrekt aktualisiert werden.
+Buchsuche: Überprüft, ob Suchanfragen von Benutzern ordnungsgemäss durch den Controller und den Service geleitet werden
+           und genaue Ergebnisse aus dem Repository zurückgegeben werden.

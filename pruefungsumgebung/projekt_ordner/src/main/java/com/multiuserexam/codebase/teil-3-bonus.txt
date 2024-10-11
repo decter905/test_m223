@@ -1,0 +1,5 @@
+Ausgewähltes Tool: JaCoCo
+
+JaCoCo (Java Code Coverage) kann einem anzeigen, wie viel vom Code durch Tests abgedeckt ist, welche Zeilen im Code und welche Methoden getestet wurden.
+
+Ausserdem lässt sich JaCoCo gut in Maven integrieren, was dazu hilft, die Coverage-Analyse automatisch bei anderen Testdurchläufen auszuführen.

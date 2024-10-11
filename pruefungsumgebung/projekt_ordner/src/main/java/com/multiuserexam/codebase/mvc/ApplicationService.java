@@ -1,5 +1,6 @@
 package com.multiuserexam.codebase.mvc;
 
+import com.multiuserexam.codebase.BookstoreApplication;
 import com.multiuserexam.codebase.api.SupplierApi;
 import com.multiuserexam.codebase.entities.Book;
 import com.multiuserexam.codebase.repository.BookRepository;
@@ -20,8 +21,10 @@ public class ApplicationService {
     @Autowired
     private BookRepository bookRepository;
 
-    @Autowired
-    private SupplierApi supplierAPI;
+
+    private final SupplierApi supplierApi = new SupplierApi();
+
+    ApplicationService() {}
 
     public List<Book> getAllBooks() {
         return (List<Book>) bookRepository.findAll();
@@ -50,7 +53,7 @@ public class ApplicationService {
         if (bookOptional.isPresent()) {
             Book book = bookOptional.get();
             try {
-                Pair<String, Boolean> response = supplierAPI.enterOrder(isbn, quantity);
+                Pair<String, Boolean> response = supplierApi.enterOrder(isbn, quantity);
 
                 if (response.getSecond()) {
                     book.setInventoryCount(book.getInventoryCount() + quantity);

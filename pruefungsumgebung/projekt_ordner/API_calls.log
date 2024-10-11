@@ -1,0 +1,91 @@
+Oct 11, 2024 3:00:12 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 278
+Oct 11, 2024 3:00:16 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 942
+Book not found for ISBN: 3551551677
+Oct 11, 2024 3:01:06 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 712
+Oct 11, 2024 3:01:22 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 406
+Oct 11, 2024 3:01:41 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 691
+Book not found for ISBN: 3551551677
+Oct 11, 2024 3:06:28 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 58
+Oct 11, 2024 3:08:29 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 820
+Oct 11, 2024 3:10:06 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 91
+Oct 11, 2024 3:11:57 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 641
+Oct 11, 2024 3:12:00 PM com.multiuserexam.codebase.api.SupplierApi enterOrder
+INFO: API registered Order for (Book 3551551677, Quantity 10): Response (642, true)
+Order successful for ISBN: 3551551677, Quantity: 10
+Oct 11, 2024 3:17:17 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 501
+Oct 11, 2024 3:19:29 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 458
+Oct 11, 2024 3:23:43 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 247
+Oct 11, 2024 3:24:07 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 314
+Oct 11, 2024 3:24:37 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 830
+Oct 11, 2024 3:26:28 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 333
+Oct 11, 2024 3:26:54 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 552
+Oct 11, 2024 3:27:16 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 173
+Oct 11, 2024 3:29:34 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 262
+Oct 11, 2024 3:29:47 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 82
+Oct 11, 2024 3:29:49 PM com.multiuserexam.codebase.api.SupplierApi enterOrder
+INFO: API registered Order for (Book 3551551677, Quantity 10): Response (83, true)
+Order successful for ISBN: 3551551677, Quantity: 10
+Oct 11, 2024 3:30:09 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 667
+Oct 11, 2024 3:33:40 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 993
+Oct 11, 2024 3:36:21 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 991
+Oct 11, 2024 3:38:32 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 474
+Oct 11, 2024 3:40:07 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 67
+Oct 11, 2024 3:40:10 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 776
+Oct 11, 2024 3:40:11 PM com.multiuserexam.codebase.api.SupplierApi enterOrder
+INFO: API registered Order for (Book 3551551677, Quantity 10): Response (68, true)
+Order successful for ISBN: 3551551677, Quantity: 10
+Oct 11, 2024 3:40:23 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 71
+Oct 11, 2024 3:40:26 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 217
+Oct 11, 2024 3:40:27 PM com.multiuserexam.codebase.api.SupplierApi enterOrder
+INFO: API registered Order for (Book 3551551677, Quantity 10): Response (72, true)
+Order successful for ISBN: 3551551677, Quantity: 10
+Oct 11, 2024 3:41:24 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 837
+Oct 11, 2024 3:42:19 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 907
+Oct 11, 2024 3:42:56 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 557
+Oct 11, 2024 3:42:58 PM com.multiuserexam.codebase.api.SupplierApi enterOrder
+INFO: API registered Order for (Book 3551551677, Quantity 10): Response (558, true)
+Order successful for ISBN: 3551551677, Quantity: 10
+Oct 11, 2024 3:42:59 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 680
+Oct 11, 2024 3:43:19 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 942
+Oct 11, 2024 4:02:40 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 253
+Oct 11, 2024 4:02:43 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 693
+Oct 11, 2024 4:02:44 PM com.multiuserexam.codebase.api.SupplierApi enterOrder
+INFO: API registered Order for (Book 3551551677, Quantity 10): Response (254, true)
+Order successful for ISBN: 3551551677, Quantity: 10
+Oct 11, 2024 4:02:51 PM com.multiuserexam.codebase.api.SupplierApi <init>
+INFO: API Initialized with last order ar ID 97
+Order successful for ISBN: 3551551677, Quantity: 10

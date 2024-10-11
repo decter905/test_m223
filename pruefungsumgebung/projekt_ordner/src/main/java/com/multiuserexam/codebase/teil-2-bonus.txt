@@ -1,0 +1,1 @@
+Spring bietet dafür das Modul Spring Retry an, das entwickelt wurde, um Logik für die Wiederholung in Applikationen zu integrieren.

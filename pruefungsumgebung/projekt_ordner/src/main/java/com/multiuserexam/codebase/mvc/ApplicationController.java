@@ -1,7 +1,6 @@
 package com.multiuserexam.codebase.mvc;
 
 import com.multiuserexam.codebase.entities.Book;
-import com.multiuserexam.codebase.mvc.ApplicationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -37,6 +36,16 @@ public class ApplicationController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Book not found");
         }
         return ResponseEntity.ok("Price updated successfully");
+    }
+
+    @GetMapping("/login")
+    public String showLoginPage() {
+        return "login";
+    }
+
+    @GetMapping("/admin")
+    public String showAdminPage() {
+        return "Hello admin.";
     }
 }
 
