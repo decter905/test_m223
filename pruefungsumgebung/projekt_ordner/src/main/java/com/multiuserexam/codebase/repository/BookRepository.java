@@ -1,10 +1,14 @@
 package com.multiuserexam.codebase.repository;
 
-// Nutze eins, oder beides dieser Repositories.
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import java.util.Optional;
+import com.multiuserexam.codebase.entities.Book;
 
-public interface BookRepository {
+@Repository
+public interface BookRepository extends CrudRepository<Book, Long> {
 
-    // TODO: Implementiere das Repository.
+    Optional<Book> findByIsbn(String isbn);
+
 }
