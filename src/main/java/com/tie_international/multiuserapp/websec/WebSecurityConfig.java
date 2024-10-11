@@ -1,9 +1,11 @@
 package com.tie_international.multiuserapp.websec;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -14,6 +16,9 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
+
+    @Value("${application.security.disabled:false}")
+    private boolean disableSecurity;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -36,21 +41,29 @@ public class WebSecurityConfig {
                 .build();
         return new InMemoryUserDetailsManager(user1, user2, admin);
     }
+
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http)
-            throws Exception {
-        http
-                .authorizeHttpRequests(requests -> requests
-                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
-                        .anyRequest().authenticated()
-                )
-                .formLogin(withDefaults -> {})
-                .sessionManagement(session ->
-                        session
-                                .maximumSessions(1)
-                                .maxSessionsPreventsLogin(true)
-                );
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        if (disableSecurity) {
+            http
+                    .authorizeHttpRequests(auth -> auth
+                            .anyRequest().permitAll()
+                    )
+                    .csrf(AbstractHttpConfigurer::disable);  // Disables CSRF protection
+        } else {
+            http
+                    .authorizeHttpRequests(auth -> auth
+                            .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                            .anyRequest().authenticated()
+                    )
+                    .formLogin(withDefaults -> {
+                    })
+                    .sessionManagement(session ->
+                            session
+                                    .maximumSessions(1)
+                                    .maxSessionsPreventsLogin(true)
+                    );
+        }
         return http.build();
     }
-
 }
