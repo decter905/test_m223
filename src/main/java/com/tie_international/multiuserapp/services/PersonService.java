@@ -21,8 +21,8 @@ public class PersonService {
         return Optional.of(personRepo.findAll());
     }
 
-    public Optional<List<Person>> getPersonById(Long id) {
-        return personRepo.findAllById(id);
+    public Optional<Person> getPersonById(Long id) {
+        return personRepo.findById(id);
     }
 
     public Optional<List<Person>> getPersonByLastName(String name) {

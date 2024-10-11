@@ -5,9 +5,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-/** 
+/**
  * Class representing a real person accessing the shop.
-*/
+ */
 @Entity
 public class Person {
 
@@ -19,11 +19,14 @@ public class Person {
 	private String lastName;
 
 	public Person() {
+		// Default constructor required by JPA
 	}
 
 	public Person(String firstName, String lastName) {
-
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -40,4 +43,7 @@ public class Person {
 		this.lastName = lastName;
 	}
 
+	public Long getId() {
+		return id;
+	}
 }

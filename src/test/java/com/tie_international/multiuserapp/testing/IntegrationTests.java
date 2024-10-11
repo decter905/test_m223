@@ -13,18 +13,11 @@ import org.springframework.http.ResponseEntity;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-
 public class IntegrationTests {
-
-    @Value("${application.security.disabled:false}")
-    private boolean disableSecurity;
-
     @Value(value = "${local.server.port}")
     private int port;
-
     @Autowired
     private TestRestTemplate restTemplate;
-
     @Test
     public void requestShouldReturnEmptyList()
             throws JsonProcessingException {

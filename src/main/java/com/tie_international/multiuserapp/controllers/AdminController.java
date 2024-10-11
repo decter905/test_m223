@@ -26,7 +26,7 @@ public class AdminController {
     }
 
     @GetMapping("getPersonById/{id}")
-    public Optional<List<Person>>getPersonById(@PathVariable("id") Long id) {
+    public Optional<Person>getPersonById(@PathVariable("id") Long id) {
         return personService.getPersonById(id);
     }
 
