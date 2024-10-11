@@ -1,7 +1,6 @@
 package com.multiuserexam.codebase;
 
-// Import der Supplier API
-import com.multiuserexam.codebase.api.SupplierApi;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

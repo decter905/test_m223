@@ -1,6 +1,5 @@
 package com.multiuserexam.codebase.mvc;
 
-import com.multiuserexam.codebase.BookstoreApplication;
 import com.multiuserexam.codebase.api.SupplierApi;
 import com.multiuserexam.codebase.entities.Book;
 import com.multiuserexam.codebase.repository.BookRepository;
@@ -81,6 +80,7 @@ public class ApplicationService {
         try (FileWriter writer = new FileWriter("API_calls.log", true)) {
             writer.write(message + "\n");
         } catch (IOException e) {
+            System.err.println(e.getMessage());
             e.printStackTrace();
         }
     }

@@ -89,3 +89,4 @@ Order successful for ISBN: 3551551677, Quantity: 10
 Oct 11, 2024 4:02:51 PM com.multiuserexam.codebase.api.SupplierApi <init>
 INFO: API Initialized with last order ar ID 97
 Order successful for ISBN: 3551551677, Quantity: 10
+Order successful for ISBN: 3551551677, Quantity: 10
